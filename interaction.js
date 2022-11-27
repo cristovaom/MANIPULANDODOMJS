@@ -50,7 +50,7 @@ let ITENS_LOJA = [
 ]
 
 startfunction = () => {
-    var produtos = document.getElementById('Lista');
+    let produtos = document.getElementById('Lista');
     ITENS_LOJA.map((val)=>{
        produtos.innerHTML+=`
        
@@ -60,7 +60,6 @@ startfunction = () => {
        <p>preco: R$ `+val.preco+`</p>
        <p>descrição:</p>
        <p>`+val.descricao+`</p>
-
        </div>
        `;
     })
